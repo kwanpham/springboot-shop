@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- was: <?xml version="1.0" encoding="UTF-8"?> -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context" 
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+  <mvc:resources mapping="/resources/**" location="/resources/" />
+  <mvc:resources mapping="/image/**" location="/image/" />
+  <context:component-scan base-package="controller"></context:component-scan>
+  <mvc:annotation-driven></mvc:annotation-driven>
+  <context:annotation-config></context:annotation-config>
+  <bean id="viewResolver"
+        class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+        p:prefix="/WEB-INF/jsp/"
+        p:suffix=".jsp" />
+
+  <!-- cấu hình kết nối -->
+  <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+    <property name="dataSource" ref="dataSource" />
+  </bean>
+  <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+    <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+    <property name="url" value="jdbc:mysql://localhost:3306/dongho_spring?useUnicode=true&amp;connectionCollation=utf8_general_ci&amp;characterSetResults=utf8&amp;characterEncoding=utf-8"/>
+    <property name="username" value="root"></property>
+    <property name="password" value="12345"></property>
+  </bean>
+  <!-- cấu hình cho SessionFactory -->
+  <bean id="tengicungduoc" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+    <property name="dataSource" ref="dataSource"></property>
+    <property name="annotatedClasses">
+      <list>
+        <value>entities.Users</value>
+        <value>entities.Categories</value>
+        <value>entities.Products</value>
+        <value>entities.Slides</value>
+        <value>entities.Orders</value>
+        <value>entities.Orderdetails</value>
+        <value>entities.Menus</value>
+        <value>entities.ConfigHome</value>
+        <value>entities.Config</value>
+        <value>entities.CategoryPost</value>
+        <value>entities.Posts</value>
+        <value>entities.Contacs</value>
+      </list>
+    </property>
+    <property name="hibernateProperties">
+      <props>
+        <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+        <prop key="org.hibernate.show_sql">true</prop>
+      </props>
+    </property>
+  </bean>
+  <bean id="usersDAO" class="dao.UserDaoImpl">
+    <property name="sessionFactory" ref="tengicungduoc"></property>
+  </bean>
+  <bean id="CategoryDao" class="dao.CategoryDaoIml">
+    <property name="sessionFactory" ref="tengicungduoc"></property>
+  </bean>
+  <bean id="ProductDao" class="dao.ProductDaoIml">
+    <property name="sessionFactory" ref="tengicungduoc"></property>
+  </bean>
+  <bean id="SlideDao" class="dao.SlideDaoImpl">
+    <property name="sessionFactory" ref="tengicungduoc"></property>
+  </bean>
+  <bean id="orderDao" class="dao.OrderDaoImpl">
+    <property name="sessionFactory" ref="tengicungduoc"></property>
+  </bean>
+  <bean id="menuDao" class="dao.MenuDaoIml">
+    <property name="sessionFactory" ref="tengicungduoc"></property>
+  </bean>
+  <bean id="ConfigHomeDao" class="dao.ConfigHomeDaoIml">
+    <property name="sessionFactory" ref="tengicungduoc"></property>
+  </bean>
+  <bean id="Config" class="dao.ConfigDaoIml">
+    <property name="sessionFactory" ref="tengicungduoc"></property>
+  </bean>
+  <bean id="homeDao" class="dao.HomeDaoIml">
+    <property name="sessionFactory" ref="tengicungduoc"></property>
+  </bean>
+  <bean id="Category_postDao" class="dao.Category_PostDaoIml">
+    <property name="sessionFactory" ref="tengicungduoc"></property>
+  </bean>
+  <bean id="PostDao" class="dao.PostDaoIml">
+    <property name="sessionFactory" ref="tengicungduoc"></property>
+  </bean>
+  <bean id="ContacsDao" class="dao.ContacsDaoImpl">
+    <property name="sessionFactory" ref="tengicungduoc"></property>
+  </bean>
+  <bean id="multipartResolver"
+        class="org.springframework.web.multipart.commons.CommonsMultipartResolver" >
+    <property name="maxUploadSize" value="500000000"/>
+    <property name="maxInMemorySize" value="500000000" />
+  </bean> 
+</beans>
