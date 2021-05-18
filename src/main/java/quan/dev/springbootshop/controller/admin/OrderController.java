@@ -5,10 +5,10 @@
  */
 package quan.dev.springbootshop.controller.admin;
 
-import dao.OrderDao;
-import entities.Config;
-import entities.Orderdetails;
-import entities.Orders;
+import quan.dev.springbootshop.dao.OrderDao;
+import quan.dev.springbootshop.entities.Config;
+import quan.dev.springbootshop.entities.Orderdetails;
+import quan.dev.springbootshop.entities.Orders;
 import java.util.List;
 import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;

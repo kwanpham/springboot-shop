@@ -5,12 +5,13 @@
  */
 package quan.dev.springbootshop.dao;
 
-import entities.Categories;
-import entities.CategoryPost;
+
+
 import java.util.List;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import quan.dev.springbootshop.entities.CategoryPost;
 
 /**
  *

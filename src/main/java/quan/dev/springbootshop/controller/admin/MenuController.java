@@ -5,10 +5,10 @@
  */
 package quan.dev.springbootshop.controller.admin;
 
-import dao.MenuDao;
-import entities.Categories;
-import entities.CategoryPost;
-import entities.Menus;
+import quan.dev.springbootshop.dao.MenuDao;
+import quan.dev.springbootshop.entities.Categories;
+import quan.dev.springbootshop.entities.CategoryPost;
+import quan.dev.springbootshop.entities.Menus;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

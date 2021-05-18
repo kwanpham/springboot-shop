@@ -5,8 +5,8 @@
  */
 package quan.dev.springbootshop.dao;
 
-import entities.Categories;
-import entities.Products;
+import quan.dev.springbootshop.entities.Categories;
+import quan.dev.springbootshop.entities.Products;
 import java.util.Date;
 import java.util.List;
 import org.hibernate.Query;

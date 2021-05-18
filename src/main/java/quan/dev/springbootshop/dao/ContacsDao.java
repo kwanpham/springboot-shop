@@ -5,7 +5,7 @@
  */
 package quan.dev.springbootshop.dao;
 
-import entities.Contacs;
+import quan.dev.springbootshop.entities.Contacs;
 import java.util.List;
 
 /**

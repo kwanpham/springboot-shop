@@ -5,8 +5,8 @@
  */
 package quan.dev.springbootshop.controller.admin;
 
-import dao.CategoryDao;
-import entities.Categories;
+import quan.dev.springbootshop.dao.CategoryDao;
+import quan.dev.springbootshop.entities.Categories;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;

@@ -5,11 +5,11 @@
  */
 package quan.dev.springbootshop.controller.admin;
 
-import dao.CategoryDao;
-import dao.ProductDao;
-import entities.Categories;
-import entities.Products;
-import entities.ProductsInsert;
+import quan.dev.springbootshop.dao.CategoryDao;
+import quan.dev.springbootshop.dao.ProductDao;
+import quan.dev.springbootshop.entities.Categories;
+import quan.dev.springbootshop.entities.Products;
+import quan.dev.springbootshop.entities.ProductsInsert;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;

@@ -5,9 +5,10 @@
  */
 package quan.dev.springbootshop.controller.admin;
 
-import controller.client.MenuTemplateController;
-import dao.ContacsDao;
-import entities.Contacs;
+
+import quan.dev.springbootshop.controller.client.MenuTemplateController;
+import quan.dev.springbootshop.dao.ContacsDao;
+import quan.dev.springbootshop.entities.Contacs;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -26,7 +27,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
  * @author Administrator
  */
 @Controller
-public class ContacsController extends MenuTemplateController{
+public class ContacsController extends MenuTemplateController {
 
     private ContacsDao contacsDao;
 

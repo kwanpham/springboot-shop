@@ -5,18 +5,23 @@
  */
 package quan.dev.springbootshop.dao;
 
-import entities.CategoryPost;
+
+import quan.dev.springbootshop.entities.CategoryPost;
+
 import java.util.List;
 
 /**
- *
  * @author Administrator
  */
 public interface Category_PostDao {
 
-  public List<CategoryPost> getAllcategory_post();
-  public boolean insert(CategoryPost categorypost);
-  public CategoryPost getCatepostById(int id);
-  public boolean updateCatepots(CategoryPost categorypost);
-  public boolean delete(int id);
+    public List<CategoryPost> getAllcategory_post();
+
+    public boolean insert(CategoryPost categorypost);
+
+    public CategoryPost getCatepostById(int id);
+
+    public boolean updateCatepots(CategoryPost categorypost);
+
+    public boolean delete(int id);
 }

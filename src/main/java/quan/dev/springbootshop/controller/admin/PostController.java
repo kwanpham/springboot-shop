@@ -5,16 +5,16 @@
  */
 package quan.dev.springbootshop.controller.admin;
 
-import dao.CategoryDao;
-import dao.Category_PostDao;
-import dao.PostDao;
-import dao.ProductDao;
-import entities.Categories;
-import entities.CategoryPost;
-import entities.PostInsert;
-import entities.Posts;
-import entities.Products;
-import entities.ProductsInsert;
+import quan.dev.springbootshop.dao.CategoryDao;
+import quan.dev.springbootshop.dao.Category_PostDao;
+import quan.dev.springbootshop.dao.PostDao;
+import quan.dev.springbootshop.dao.ProductDao;
+import quan.dev.springbootshop.entities.Categories;
+import quan.dev.springbootshop.entities.CategoryPost;
+import quan.dev.springbootshop.entities.PostInsert;
+import quan.dev.springbootshop.entities.Posts;
+import quan.dev.springbootshop.entities.Products;
+import quan.dev.springbootshop.entities.ProductsInsert;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;

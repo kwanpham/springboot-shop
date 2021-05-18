@@ -5,9 +5,9 @@
  */
 package quan.dev.springbootshop.controller.admin;
 
-import dao.ConfigDao;
-import entities.Config;
-import entities.Menus;
+import quan.dev.springbootshop.dao.ConfigDao;
+import quan.dev.springbootshop.entities.Config;
+import quan.dev.springbootshop.entities.Menus;
 import java.util.List;
 import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;

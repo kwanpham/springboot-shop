@@ -5,9 +5,9 @@
  */
 package quan.dev.springbootshop.controller.client;
 
-import dao.ProductDao;
-import entities.Categories;
-import entities.Products;
+import quan.dev.springbootshop.dao.ProductDao;
+import quan.dev.springbootshop.entities.Categories;
+import quan.dev.springbootshop.entities.Products;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

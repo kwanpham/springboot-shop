@@ -5,7 +5,7 @@
  */
 package quan.dev.springbootshop.dao;
 
-import entities.Users;
+import quan.dev.springbootshop.entities.Users;
 import java.util.List;
 import org.hibernate.HibernateException;
 import org.hibernate.Query;

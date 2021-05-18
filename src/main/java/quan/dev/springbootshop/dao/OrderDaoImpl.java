@@ -5,11 +5,11 @@
  */
 package quan.dev.springbootshop.dao;
 
-import entities.Categories;
-import entities.Config;
-import entities.Menus;
-import entities.Orderdetails;
-import entities.Orders;
+import quan.dev.springbootshop.entities.Categories;
+import quan.dev.springbootshop.entities.Config;
+import quan.dev.springbootshop.entities.Menus;
+import quan.dev.springbootshop.entities.Orderdetails;
+import quan.dev.springbootshop.entities.Orders;
 import java.util.List;
 import org.hibernate.Query;
 import org.hibernate.Session;

@@ -5,10 +5,10 @@
  */
 package quan.dev.springbootshop.dao;
 
-import entities.Config;
-import entities.Orderdetails;
+import quan.dev.springbootshop.entities.Config;
+import quan.dev.springbootshop.entities.Orderdetails;
 import java.util.List;
-import entities.Orders;
+import quan.dev.springbootshop.entities.Orders;
 
 /**
  *

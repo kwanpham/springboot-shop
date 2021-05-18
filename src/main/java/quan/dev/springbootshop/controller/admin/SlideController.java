@@ -5,9 +5,9 @@
  */
 package quan.dev.springbootshop.controller.admin;
 
-import dao.SlidesDao;
-import entities.Slides;
-import entities.SlidesInsert;
+import quan.dev.springbootshop.dao.SlidesDao;
+import quan.dev.springbootshop.entities.Slides;
+import quan.dev.springbootshop.entities.SlidesInsert;
 import java.io.File;
 import java.io.IOException;
 import javax.servlet.ServletContext;

@@ -5,8 +5,9 @@
  */
 package quan.dev.springbootshop.controller.admin;
 
-import dao.Category_PostDao;
-import entities.CategoryPost;
+
+import quan.dev.springbootshop.dao.Category_PostDao;
+import quan.dev.springbootshop.entities.CategoryPost;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;

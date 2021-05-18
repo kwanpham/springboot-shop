@@ -6,9 +6,9 @@
 package quan.dev.springbootshop.controller.admin;
 
 import javax.servlet.http.HttpSession;
-import dao.ConfigDao;
-import entities.Posts;
-import entities.Products;
+import quan.dev.springbootshop.dao.ConfigDao;
+import quan.dev.springbootshop.entities.Posts;
+import quan.dev.springbootshop.entities.Products;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

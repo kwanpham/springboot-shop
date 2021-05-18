@@ -5,9 +5,9 @@
  */
 package quan.dev.springbootshop.dao;
 
-import entities.Categories;
-import entities.CategoryPost;
-import entities.Menus;
+import quan.dev.springbootshop.entities.Categories;
+import quan.dev.springbootshop.entities.CategoryPost;
+import quan.dev.springbootshop.entities.Menus;
 import java.util.List;
 
 /**

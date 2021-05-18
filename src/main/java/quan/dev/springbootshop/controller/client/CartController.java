@@ -5,9 +5,9 @@
  */
 package quan.dev.springbootshop.controller.client;
 
-import dao.ProductDao;
-import entities.Cart;
-import entities.Products;
+import quan.dev.springbootshop.dao.ProductDao;
+import quan.dev.springbootshop.entities.Cart;
+import quan.dev.springbootshop.entities.Products;
 import java.util.ArrayList;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;

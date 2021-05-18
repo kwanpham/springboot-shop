@@ -5,7 +5,7 @@
  */
 package quan.dev.springbootshop.service;
 
-import dao.HomeDao;
+import quan.dev.springbootshop.dao.HomeDao;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;

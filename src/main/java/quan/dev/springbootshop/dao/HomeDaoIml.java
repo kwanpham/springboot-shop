@@ -5,21 +5,21 @@
  */
 package quan.dev.springbootshop.dao;
 
-import entities.Cart;
-import entities.Categories;
-import entities.CategoryPost;
-import entities.Config;
-import entities.ConfigHome;
-import entities.Menus;
-import entities.Orderdetails;
-import entities.Products;
-import entities.Slides;
+import quan.dev.springbootshop.entities.Cart;
+import quan.dev.springbootshop.entities.Categories;
+import quan.dev.springbootshop.entities.CategoryPost;
+import quan.dev.springbootshop.entities.Config;
+import quan.dev.springbootshop.entities.ConfigHome;
+import quan.dev.springbootshop.entities.Menus;
+import quan.dev.springbootshop.entities.Orderdetails;
+import quan.dev.springbootshop.entities.Products;
+import quan.dev.springbootshop.entities.Slides;
 import java.util.List;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import entities.Orders;
-import entities.Posts;
+import quan.dev.springbootshop.entities.Orders;
+import quan.dev.springbootshop.entities.Posts;
 import java.math.BigDecimal;
 import java.util.Date;
 import javax.servlet.http.HttpSession;

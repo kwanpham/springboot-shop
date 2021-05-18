@@ -5,10 +5,10 @@
  */
 package quan.dev.springbootshop.dao;
 
-import entities.Config;
-import entities.Menus;
-import entities.Posts;
-import entities.Products;
+import quan.dev.springbootshop.entities.Config;
+import quan.dev.springbootshop.entities.Menus;
+import quan.dev.springbootshop.entities.Posts;
+import quan.dev.springbootshop.entities.Products;
 import java.util.List;
 
 /**

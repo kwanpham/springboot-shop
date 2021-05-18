@@ -16,8 +16,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
  */
 @Controller
 public class AuthenticateController {
-    public @ModelAttribute
-  void global(ModelMap map, HttpSession session) {
+
+   @ModelAttribute
+   public void global(ModelMap map, HttpSession session) {
     if(session.getAttribute("accountAdmin")==null){
     }else{
       

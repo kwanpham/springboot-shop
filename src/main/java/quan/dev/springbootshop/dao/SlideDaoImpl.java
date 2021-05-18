@@ -5,7 +5,7 @@
  */
 package quan.dev.springbootshop.dao;
 
-import entities.Slides;
+import quan.dev.springbootshop.entities.Slides;
 import java.util.List;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
